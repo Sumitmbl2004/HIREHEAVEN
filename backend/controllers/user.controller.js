@@ -3,9 +3,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 /**
- * =========================
  * REGISTER USER
- * =========================
  */
 export const register = async (req, res) => {
     try {
@@ -55,9 +53,7 @@ export const register = async (req, res) => {
 };
 
 /**
- * =========================
  * LOGIN USER
- * =========================
  */
 export const login = async (req, res) => {
   const { email, password, role } = req.body;
@@ -103,9 +99,7 @@ export const login = async (req, res) => {
 
 
 /**
- * =========================
  * LOGOUT USER
- * =========================
  */
 export const logout = async (req, res) => {
     try {
@@ -126,9 +120,7 @@ export const logout = async (req, res) => {
 };
 
 /**
- * =========================
  * UPDATE PROFILE
- * =========================
  */
 export const updateProfile = async (req, res) => {
     try {
